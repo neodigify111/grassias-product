@@ -1,0 +1,186 @@
+.grass-calculator input::-webkit-outer-spin-button,
+.grass-calculator input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.grass-calculator input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+/* product single page */
+
+.swiper-thumg-gallery {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.swiper-thumg-gallery>img:last-child,
+.swiper-thumg-gallery>img:first-child {
+  width: 20px;
+}
+
+.swiper-thumg-gallery img {
+  cursor: pointer;
+}
+
+.swiper-thumg-gallery .swiper-slide img {
+  border: 4px solid #00000000;
+}
+
+.swiper-thumg-gallery .swiper-slide-thumb-active img {
+  border: 4px solid #99cb58;
+}
+
+
+.swiper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  width: 100%;
+}
+
+.mySwiper {
+  width: calc(100% - 50px);
+  box-sizing: border-box;
+  margin: 0 25px 0 25px !important;
+  padding: 10px 0px;
+}
+
+.mySwiper .swiper-slide {
+  width: 33.33%;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.mySwiper .swiper-button-prev {
+  left: -20px;
+}
+
+.mySwiper .swiper-button-prev::after,
+.mySwiper .swiper-button-next::after {
+  display: none;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+/* label select */
+.subscribe-block .gift-checkbox,
+.subscribe-block .subscribe-checkbox {
+  padding-left: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.subscribe-block .gift-checkbox span::before,
+.subscribe-block .subscribe-checkbox span::before {
+  content: '';
+  width: 20px;
+  left: 10px;
+  top: 5px;
+  height: 21px;
+  background-size: contain;
+  background-position: bottom center;
+  background-image: url(non-checkbox.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.subscribe-block .gift-checkbox input:checked~span::before,
+.subscribe-block .subscribe-checkbox input:checked~span::before {
+  background-image: url(checkbox.svg);
+}
+
+
+.subscribe-block .gift-checkbox input,
+.subscribe-block .subscribe-checkbox input {
+  display: none;
+}
+
+.div-block-5>div:first-child,
+.div-block-5>div:last-child,
+.var-wrap .single-var {
+  cursor: pointer;
+}
+
+.prod-tab-cont {
+  display: none;
+}
+
+.prod-tab-cont.active {
+  display: block;
+}
+
+.prod-tab-block {
+  cursor: pointer;
+}
+
+.prod-tab-block.active {
+  text-decoration: underline;
+}
+
+.prod-tab-block-1 {
+  width: 34% !important;
+  background-color: #99cb58 !important;
+  position: relative;
+}
+
+.prod-tab-block-2 {
+  width: 33% !important;
+  z-index: 1;
+  background-color: #65BC46 !important;
+  position: relative;
+}
+
+.prod-tab-block-3 {
+  width: 33% !important;
+  background-color: #0e7f40 !important;
+  z-index: 2;
+}
+
+.prod-tab-block-2::before {
+  border-radius: 20px;
+  background-color: #65BC46 !important;
+  width: 100%;
+  height: 100%;
+  right: inherit;
+  position: absolute;
+  content: '';
+  right: -30px;
+  z-index: -1;
+}
+
+.text-block-9 {
+  line-height: 1.2;
+}
+
+@media (max-width: 767px) {
+
+  .swiper-thumg-gallery {
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+
+  .mySwiper {
+    width: calc(100% - 50px);
+    box-sizing: border-box;
+    margin: 0 15px 0 15px !important;
+    padding: 10px 0px;
+  }
+}
